@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-start {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 30px;
+    font-size: 50px;
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+    transition: 0.5s;
+    position: absolute;
+}
+.btn-start:hover {
+    background-color: gray;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    box-shadow: 0px 5px black ;
+} 
+.q-a,.end { 
+    display: flex;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+.answers {
+    display: flex;
+
+}
+.question {
+    width: 200px;
+    height: 100px;
+    background-color: none;
+    display: block;
+    font-weight: bold;
+    font-size: 60px;
+    pointer-events: none;
+}
+.answer {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+.answer:hover {
+    background-color: gray;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    box-shadow: 0px 5px black ;
+}
+.restart {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+.restart:hover {
+    background-color: gray;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    box-shadow: 0px 5px black ;
+} 
+.results {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
